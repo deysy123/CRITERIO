@@ -1,0 +1,81 @@
+body {
+    background-color: burlywood;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(95,203,113) 30%, rgb(241, 255, 160) 30%);
+}
+
+/* Styles for the left block */
+#block_uno {
+    background: transparent;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#block_uno h2, #block_uno #genero, #block_uno #dc {
+    color: #fff;
+}
+
+#block_uno, #block_uno div, #block_uno #foto {
+    text-align: center;
+}
+
+#block_uno #foto img {
+    border-radius: 50%;
+}
+
+/* Styles for the right block */
+#block_dos {
+    width: 50%;
+    margin-left: 50px;
+}
+
+#block_dos h1 {
+    margin-top: 2em;
+    text-align: justify;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#block_dos h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#block_dos p {
+    color: #333;
+    line-height: 1.6;
+}
+
+strong {
+    color: #007BFF; /* Azul para los títulos */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Common styles for both blocks */
+#block_uno, #block_dos {
+    display: inline-block;
+    vertical-align: top;
+}
+	
